@@ -16,6 +16,8 @@
 		AAA96AC728A7EAAC00AA3FBD /* MultitimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA96AC628A7EAAC00AA3FBD /* MultitimeTests.swift */; };
 		AAA96AD128A7EAAC00AA3FBD /* MultitimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA96AD028A7EAAC00AA3FBD /* MultitimeUITests.swift */; };
 		AAA96AD328A7EAAC00AA3FBD /* MultitimeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA96AD228A7EAAC00AA3FBD /* MultitimeUITestsLaunchTests.swift */; };
+		AAA96AE228A7ECFE00AA3FBD /* AsyncState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA96AE128A7ECFE00AA3FBD /* AsyncState.swift */; };
+		AAA96AE528A7ED9A00AA3FBD /* Notifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA96AE428A7ED9A00AA3FBD /* Notifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		AAA96ACC28A7EAAC00AA3FBD /* MultitimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultitimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA96AD028A7EAAC00AA3FBD /* MultitimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultitimeUITests.swift; sourceTree = "<group>"; };
 		AAA96AD228A7EAAC00AA3FBD /* MultitimeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultitimeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AAA96AE128A7ECFE00AA3FBD /* AsyncState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncState.swift; sourceTree = "<group>"; };
+		AAA96AE428A7ED9A00AA3FBD /* Notifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +103,13 @@
 		AAA96AAE28A7EAAA00AA3FBD /* Multitime */ = {
 			isa = PBXGroup;
 			children = (
+				AAA96AE328A7ED8C00AA3FBD /* Notifier */,
+				AAA96AE028A7EC4F00AA3FBD /* AsyncState */,
+				AAA96ADF28A7EB9F00AA3FBD /* Resources */,
 				AAA96AAF28A7EAAA00AA3FBD /* AppDelegate.swift */,
 				AAA96AB128A7EAAA00AA3FBD /* SceneDelegate.swift */,
 				AAA96AB328A7EAAA00AA3FBD /* ViewController.swift */,
 				AAA96AB528A7EAAA00AA3FBD /* Main.storyboard */,
-				AAA96AB828A7EAAC00AA3FBD /* Assets.xcassets */,
 				AAA96ABA28A7EAAC00AA3FBD /* LaunchScreen.storyboard */,
 				AAA96ABD28A7EAAC00AA3FBD /* Info.plist */,
 			);
@@ -125,6 +131,30 @@
 				AAA96AD228A7EAAC00AA3FBD /* MultitimeUITestsLaunchTests.swift */,
 			);
 			path = MultitimeUITests;
+			sourceTree = "<group>";
+		};
+		AAA96ADF28A7EB9F00AA3FBD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AAA96AB828A7EAAC00AA3FBD /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AAA96AE028A7EC4F00AA3FBD /* AsyncState */ = {
+			isa = PBXGroup;
+			children = (
+				AAA96AE128A7ECFE00AA3FBD /* AsyncState.swift */,
+			);
+			path = AsyncState;
+			sourceTree = "<group>";
+		};
+		AAA96AE328A7ED8C00AA3FBD /* Notifier */ = {
+			isa = PBXGroup;
+			children = (
+				AAA96AE428A7ED9A00AA3FBD /* Notifier.swift */,
+			);
+			path = Notifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +288,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAA96AE528A7ED9A00AA3FBD /* Notifier.swift in Sources */,
 				AAA96AB428A7EAAA00AA3FBD /* ViewController.swift in Sources */,
 				AAA96AB028A7EAAA00AA3FBD /* AppDelegate.swift in Sources */,
+				AAA96AE228A7ECFE00AA3FBD /* AsyncState.swift in Sources */,
 				AAA96AB228A7EAAA00AA3FBD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
